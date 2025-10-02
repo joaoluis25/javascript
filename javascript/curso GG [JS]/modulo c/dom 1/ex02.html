@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>introdução a DOM</h1>
+    <h1><strong>usando acesso a DOM por id [getElementsById]</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum quia unde sint sit officia odio veritatis iste adipisci ipsam quos, dolorum iusto quas corrupti perferendis in exercitationem vel laudantium!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum minus sed molestiae eaque quibusdam rerum perferendis voluptatibus, culpa nesciunt tempora est quas odit, numquam consectetur et omnis blanditiis impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut eligendi laborum sequi ipsa atque? Voluptate, fugit exercitationem iure numquam voluptatem temporibus officiis veniam odio ut, natus illum. Voluptatem, sint!</p>
+    </div>
+
+    <script>
+        var d = window.document.getElementById('msg')
+        d.style.background= 'black'
+        d.style.color= 'white'
+        //d.innerText= 'a mensagem foi transformada!' / 2 jeitos de fazer o mesmo comando.
+        window.document.getElementById('msg').innerText='ola mundo, a mensagem sera transmitida!'
+    </script>
+
+    
+</body>
+</html>

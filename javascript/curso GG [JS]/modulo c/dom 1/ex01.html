@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: gray;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>introdução a DOM</h1>
+    <h1><strong>usando o acesso ao DOM por marca [getElementsByTagName].</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar <strong>DOM</strong> em JS</p>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laborum quia unde sint sit officia odio veritatis iste adipisci ipsam quos, dolorum iusto quas corrupti perferendis in exercitationem vel laudantium!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum minus sed molestiae eaque quibusdam rerum perferendis voluptatibus, culpa nesciunt tempora est quas odit, numquam consectetur et omnis blanditiis impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut eligendi laborum sequi ipsa atque? Voluptate, fugit exercitationem iure numquam voluptatem temporibus officiis veniam odio ut, natus illum. Voluptatem, sint!</p>
+    </div>
+    
+    <script>
+        var d = window.document.getElementsByTagName('div')[0]
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        window.document.write('esta escrito isso= ' + p1.innerText) 
+        p1.style.color= 'darkred'
+        d.style.background= 'black' 
+        d.style.padding= '10px'
+    </script>
+
+    
+</body>
+</html>
