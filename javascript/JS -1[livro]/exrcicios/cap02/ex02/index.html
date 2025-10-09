@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio locadora</title>
+    <style>
+        #inTitulo{
+            background-color: lightgray;
+            border: 2px solid black;
+            font: 1em;
+        }
+
+        #inDuracao{
+            font-size: 1em;
+            border: 2px solid black;
+        }
+
+        #botao{
+            font-size: 1em;
+        }
+
+        h3::first-letter{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programa Video Locadora</h1>
+    <h2>Cine JS: Filmes em Cartaz</h2>
+    <form>
+        <p>Titulo do Filme: 
+            <input type="text" id="inTitulo" required>
+        </p>
+
+        <p>Duração em (min):
+            <input type="number" id="inDuracao" required>
+        </p>
+
+        <input type="submit" id="botao" value="Converter em Horas e Minutos">
+        <input type="reset" id="botao" value="Limpar">
+    </form>
+
+    <h3></h3>
+    <h4></h4>
+    <script src="ex02.js"></script>
+</body>
+</html>
