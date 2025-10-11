@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <style>
+        body{
+            background-color: rgb(143, 153, 0);
+            font: 1em "Arial";
+        }
+        
+        header{
+            text-align: center;
+            color: white;
+        }
+
+        section{
+            width: 450px;
+            background-color: white;
+            color: black;
+            margin: auto;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+
+        footer{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada!</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Numero: <input type="number" name="num" id="txtn"></p>
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um numero acima!</option>
+            </select>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;João Luís de Carvalho</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
