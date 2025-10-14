@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 5</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font: 1em 'Arial';
+
+        }
+
+        header{
+            text-align: center;
+            margin: 10px;
+        }
+
+        #container{
+            background-color: white;
+            width: 500px;
+            padding: 15px;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        #flista{
+            width: 150px;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Numeros</h1>
+    </header>
+
+    <section id="container">
+        <div>
+            <p>Numero entre 1 e 100:</p>
+            <input type="number" id="fnum" name="fnum" required>
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br><input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>Site criado por Joao Luis Carvalho</h3>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
