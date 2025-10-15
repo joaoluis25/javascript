@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+     <style>
+        body{
+            background-color: rgb(15, 0, 153);
+            font: 1em "Arial";
+        }
+        
+        header{
+            text-align: center;
+            color: white;
+        }
+
+        #formulario{
+            width: 450px;
+            background-color: white;
+            color: black;
+            margin: auto;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+
+        footer{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Media do Aluno</h1>
+    </header>
+
+    <div id="formulario">
+        <form>
+            <p>
+                Nome:
+                <input type="text" id="inName" required>
+            </p>
+            <p>
+                Nota 1:
+                <input type="number" id="inNota1" min="0" max="10" required>
+            </p>
+            <p>
+                Nota 2:
+                <input type="number" id="inNota2" min="0" max="10" required>
+            </p>
+            <input type="submit" value="Verificar Media">
+        </form>
+
+       <br> <h3></h3> 
+        <h4></h4>
+    </div>
+
+    <footer>
+        <p>criado por Joao Luis</p>
+    </footer>
+    <script src="ex1.js"></script>
+    
+</body>
+</html>
