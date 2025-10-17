@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valor para ntregas em bairros!</h1>
+    <script>
+        const bairro = prompt("Bairro de Entrega:")
+        let taxa
+        switch (bairro){
+            case 'centro' :
+                taxa = 5
+            break
+            case 'mundinho' :
+            case 'são joão' :
+                taxa = 7
+            break
+            case 'forum' :
+                taxa = 10
+            break
+            default:
+                 taxa = 12
+        }
+        window.alert(`Para entregas no bairro ${bairro} a taxa de entrega é de ${taxa}R$.`)
+    </script>
+</body>
+</html>
