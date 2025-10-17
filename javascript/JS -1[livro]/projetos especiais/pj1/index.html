@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+     <style>
+        body{
+            background-color: lightskyblue;
+            font: 1em 'Arial';
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        main #container{
+            display: flex;
+        }
+
+        main form{
+            padding: 10px;
+        }
+
+        #foto{
+            width: 450px;
+            height: 300px;
+        }
+
+        main #resposta{
+            border: 3px solid rgb(7, 7, 7);
+            width: 400px;
+            margin: auto;
+        }
+        main h3{
+            text-align: center;
+        }
+      
+
+        footer{
+            text-align: center;
+        }
+
+     </style>
+</head>
+<body>
+  <header>
+    <h1>Calcule o Fuso Horário no Brasil</h1>
+  </header>
+
+  <main>
+    <div id="container">
+      <div>
+        <img src="foto.webp" id="foto" alt="imagem do mapa do Brasil">
+      </div>
+
+      <form>
+        <p>
+          Digite a hora da sua região:
+          <input type="number" id="inHora" min="0" max="23" required> h
+        </p>
+
+        <p>
+          Em que região você mora:
+          <br>
+          <input type="radio" name="regMoradia" value="amarelo" required> Amarelo
+          <input type="radio" name="regMoradia" value="verde"> Verde
+          <input type="radio" name="regMoradia" value="vermelho"> Vermelho
+          <input type="radio" name="regMoradia" value="azul"> Azul
+        </p>
+
+        <p>
+          Qual região deseja saber o horário:
+          <br>
+          <input type="radio" name="regDestino" value="amarelo" required> Amarelo
+          <input type="radio" name="regDestino" value="verde"> Verde
+          <input type="radio" name="regDestino" value="vermelho"> Vermelho
+          <input type="radio" name="regDestino" value="azul"> Azul
+        </p>
+
+        <p>
+          <input type="submit" value="Calcular Horário">
+          <input type="reset" value="Limpar">
+        </p>
+      </form>
+    </div>
+
+    <div id="resposta">
+      <h3></h3>
+    </div>
+  </main>
+
+  <footer>
+    <p>Criado por João Luis</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
