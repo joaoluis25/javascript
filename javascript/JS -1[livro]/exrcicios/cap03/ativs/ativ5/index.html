@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+     <style>
+        body{
+            background-color: lightskyblue;
+            font: 1em 'Arial';
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            width: 650px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        main #container{
+            display: flex;
+        }
+
+        main form{
+            padding: 10px;
+        }
+
+        #foto{
+            width: 400px;
+            height: 250px;
+        }
+
+        main #resposta{
+            border: 3px solid rgb(7, 7, 7);
+            width: 400px;
+            margin: auto;
+        }
+        main h3{
+            text-align: center;
+        }
+      
+
+        footer{
+            text-align: center;
+        }
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Programa Inverte Centena</h1>
+    </header>
+
+    <main>
+        <div id="container">
+
+          <div>
+                <img src="foto.jpg" id="foto" alt="imagem">
+          </div>
+
+          <form>
+            <p>
+                Velocidade Permitida:
+                <input type="number" id="inVper" required>
+            </p>
+            <p>
+                Velocidade do Condutor:
+                <input type="number" id="inVcon" required+>
+            </p>
+            <input type="submit" value="Verificar Velocidade">
+            <input type="reset" value="Limpar">
+          </form>
+
+        </div>
+
+      <div id="resposta">
+        <h3></h3>
+      </div>
+    </main>
+    
+    <footer>
+        <p>Criado por Joao Luis</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
