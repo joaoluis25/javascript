@@ -42,7 +42,10 @@
         main h3{
             text-align: center;
         }
-      
+
+        .elemento{
+            width: 52px;
+        }
 
         footer{
             text-align: center;
@@ -59,15 +62,23 @@
         <div id="container">
 
           <div>
-                <img src="foto.avif" id="foto" alt="imagem">
+                <img src="foto.jpg" id="foto" alt="imagem">
           </div>
 
           <form>
             <p>
-                Valor R$:
-                <input type="number" id="inNum" step="0.01" required>
+                Valor de A:
+                <input type="number" class="elemento" id="inA" required>
             </p>
-            <input type="submit" value="Confirmar Deposito">
+            <p>
+                Valor de B:
+                <input type="number" class="elemento" id="inB" required>
+            </p>
+            <p>
+                Valor de C:
+                <input type="number" class="elemento" id="inC" required>
+            </p>
+            <input type="submit" value="Verificar Lados">
             <input type="reset" value="Limpar">
           </form>
 
