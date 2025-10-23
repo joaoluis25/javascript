@@ -15,7 +15,7 @@ frm.addEventListener('submit', (e)=>{
     */
    // CORRIGINDO O PROBLEMA DA VIRGULA
    let resposta = `Entre ${numero} e 1: ${numero}`
-   for (let i = numero - 1; i > 0; i--){
+   for (let i = numero - 1; i > 0; i = i - decrescente){
     resposta = resposta + ',' + i
    }
     resp.innerText = resposta
