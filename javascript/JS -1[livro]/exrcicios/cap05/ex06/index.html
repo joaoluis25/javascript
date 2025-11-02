@@ -14,78 +14,32 @@
             text-align: center;
         }
 
-        main {
-            background-color: white;
-            width: 650px;
-            margin: auto;
-            padding: 10px;
-        }
-
-        main #container{
-            display: flex;
-        }
-
-        main form{
-            padding: 10px;
-        }
-
-        #foto{
-            width: 280px;
-            height: 250px;
-        }
-
-        main #resposta{
-            border: 3px solid rgb(7, 7, 7);
-            width: 400px;
-            margin: auto;
-        }
-        main h3{
-            text-align: center;
-        }
-      
-
-        footer{
-            text-align: center;
-        }
-
-     </style>
+    </style>
 </head>
 <body>
     <header>
-        <h1>Programa Numero Decrescente</h1>
+        <h1>Programa Break e Continue</h1>
     </header>
 
-    <main>
-        <div id="container">
-
-          <div>
-                <img src="foto.jpg" id="foto" alt="imagem">
-          </div>
-
-          <form>
-            <p>
-                Numero:
-                <input type="number" id="inNum" required>
-            </p>
-            <p>
-                Salto:
-                <input type="number" id="inDec" required>
-            </p>
-            <input type="submit" value='Ordem Decrescente'>
-            <input type="reset" value="Limpar">
-          </form>
-
-        </div>
-
-      <div id="resposta">
-        <h4></h4>
-      </div>
-    </main>
-    
-    <footer>
-        <p>Criado por Joao Luis</p>
-    </footer>
-
-    <script src="index.js"></script>
+    <script>
+        alert('Digte 0 para sair!')
+        do{
+        const num = Number(prompt('Digite um valor: '))
+        if (num == 0 || isNaN(num)){
+            const sair = confirm('Confirmar saida?')
+            if(sair){
+                break // sai da repetição
+            } else {
+                continue //volta ao inicio do laço
+            }
+        }
+        if (num % 2 == 0){
+            alert(`O dobro de ${num} é: ${num * 2}`)
+        } else {
+            alert(`O triplo de ${num} é: ${num * 3}`)
+    }
+    } while (true)
+    alert('Bye, bye...!')
+    </script>
 </body>
 </html>
