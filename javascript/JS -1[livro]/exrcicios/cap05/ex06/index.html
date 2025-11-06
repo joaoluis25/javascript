@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio</title>
-     <style>
+    <title>Document</title>
+    <style>
         body{
-            background-color: lightskyblue;
-            font: 1em 'Arial';
+            background-color: black;
         }
-
-        header{
-            text-align: center;
-        }
-
     </style>
 </head>
 <body>
-    <header>
-        <h1>Programa Break e Continue</h1>
-    </header>
-
     <script>
-        alert('Digte 0 para sair!')
+        alert('Digite 0 para sair!')
         do{
-        const num = Number(prompt('Digite um valor: '))
-        if (num == 0 || isNaN(num)){
-            const sair = confirm('Confirmar saida?')
-            if(sair){
-                break // sai da repetição
+            const num = Number(prompt('Digite um valor:'))
+            if (num == 0 || isNaN(num)){
+                const sair = confirm('Desejas sair?')
+            if (sair){
+                break
             } else {
-                continue //volta ao inicio do laço
+                continue
             }
         }
-        if (num % 2 == 0){
-            alert(`O dobro de ${num} é: ${num * 2}`)
-        } else {
-            alert(`O triplo de ${num} é: ${num * 3}`)
-    }
-    } while (true)
-    alert('Bye, bye...!')
+            if (num % 2 == 0){
+                window.alert(`O dobro do valor ${num} é ${num * 2}.`)
+            }else{
+                window.alert(`O triplo do valor ${num} é ${num * 3}.`)
+            }
+        } while (true)
+        alert('Bye, bye...')
     </script>
+    
 </body>
 </html>
