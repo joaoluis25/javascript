@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- <script>
+        const valor = Number(prompt('Valor R$:'))
+        const parcelas = Number(prompt('Numero de Parcelas:'))
+        const valorparcelas = Math.floor(valor / parcelas)
+        const valorfinal = valorparcelas + (valor % parcelas)
+
+        for (let i = 1; i < parcelas; i++){
+            window.alert(`${i} parcela: R$ ${valorparcelas.toFixed(2)}`)
+        }
+        window.alert(`${parcelas} parcela: R$ ${valorfinal.toFixed(2)}`)
+    </script> -->
+    <script>
+        const valor = Number(prompt('Valor R$:'))
+        const parcelas = Number(prompt('Numero de Parcelas:'))
+        if (parcelas == 1){
+            window.alert(`Voce parcelou em 1 vez, valor da sua compra foi de ${valor.toFixed(2)}.`)
+        } else if (parcelas > 1){
+            const valorparcelado = valor / parcelas
+            window.alert(`Voece dividiu a sua compra em ${parcelas}, o valor de cada parcela ficou de R$ ${valorparcelado.toFixed(2)}`)
+        }
+    </script>
+    
+</body>
+</html>

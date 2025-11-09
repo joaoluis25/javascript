@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividades</title>
+</head>
+<body>
+    <script>
+        alert('Digite 0 para sair!')
+        do{
+            const ano = Number(prompt('Ano:'))
+            if (ano == 0){
+                break
+            } else if (ano == 1942 || ano == 1946){
+                window.alert(`Não houve copa em ${ano} [Segunda Guerra Mundial].`)
+            } else if (ano >= 1930 && ano % 4 == 2){
+                window.alert(`Sim! ${ano} é ano de copa do mundo.`)
+            } else {
+                window.alert(`Não! ${ano} não é ano de copa do mundo.`)
+        }
+    } while(true)
+    </script>
+</body>
+</html>
