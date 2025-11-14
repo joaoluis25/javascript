@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const cidades = ['Mineiros']  //declara e define o conteudo inicial do vetor
+
+        cidades.push('Pelotas') //adiciona a cidade ao final do vetor
+        alert (cidades)
+
+        cidades.unshift('Rio Verde') //adiciona a cidade ao inicio e desloca as demais 
+        alert(cidades)
+
+        const ultima = cidades.pop() //remove a ultima cidade[valor] do vetor
+        alert(cidades)
+
+        const primeira = cidades.shift() //remove a primeira cidade[valor] do vetor e sobe as demais 
+        alert(cidades)
+
+        // ultima recebe a cidade[valor] Pelotas
+        // primeira recebe a cidade[valor] Rio Verde
+    </script>
+</body>
+</html>
