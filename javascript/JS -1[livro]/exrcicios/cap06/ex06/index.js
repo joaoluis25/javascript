@@ -4,7 +4,7 @@ const respChances = document.querySelector('#outChances')
 const respDica = document.querySelector('#outDica')
 
 const erros = [] //vetor de escopo global com numeros ja apostados 
-const sorteado = Math.floor(Math.random() * 10) + 1 //numero aleatorio sorteado
+const sorteado = Math.floor(Math.random() * 100) + 1 //numero aleatorio sorteado
 const chances = 6 //numero maximo de chances para se jogar
 
 frm.addEventListener('submit', (e)=>{
@@ -38,4 +38,8 @@ frm.addEventListener('submit', (e)=>{
     }
     frm.inNumero.value
     frm.inNumero.focus()
+})
+
+frm.btNovo.addEventListener('click', ()=>{
+    location.reload()
 })
