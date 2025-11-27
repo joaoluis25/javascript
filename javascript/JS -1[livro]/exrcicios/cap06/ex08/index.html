@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+        const carros = []
+        carros.push({modelo: 'Sandero', valor: 46500})
+        for (carro of carros){
+            const {modelo, valor} = carro
+            alert(`${modelo} - R$:${valor}`)
+        }
+    </script>
+</body>
+</html>
