@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <!-- SEM VARIAVEL DE CONTROLE 
+        <script>
+            const idades = [12, 14, 16, 20, 22, 30]
+            let i = 0
+            for (idade of idades){
+                if (idade >= 18){
+                    i++
+                }
+            }
+            alert(`A ${i} pessoas que são maiores de idade.`)
+
+        </script>
+    -->
+    <script> // COM VARIAVEL DE CONTROLE (verifica se a afirmação e verdadeira para so depois continuar ou sair do laço)
+        const idades = [14, 16, 17]
+        let i = 0
+        let maiores = false
+        for (idade of idades){
+            if (idade >= 18){
+                i++
+                maiores = true
+                alert(`A ${i} pessoas maiores de idade.`)
+            }
+        }
+        if (!maiores){
+            alert('Não ha pessoas maiores de idade!')
+        }
+    </script>
+</body>
+</html>
