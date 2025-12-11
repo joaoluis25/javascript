@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+        const amigos = [
+            {nome: 'Ana,', idade: 21},
+            {nome: 'Joao,', idade: 20},
+            {nome: 'Tania', idade: 56}
+        ]
+
+        const soma = amigos.reduce((acumulador, amigo) => acumulador + amigo.idade, 0)
+        const todos = amigos.reduce((acumulador, amigo) => acumulador + amigo.nome + ' ', ' ')
+
+        alert(`A soma das idades de todos é: ${soma}`)
+        alert(`Todos: ${todos}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+     <style>
+        body{
+            background-color: lightskyblue;
+            font: 1em 'Arial';
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            width: 680px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        main #container{
+            display: flex;
+        }
+
+        main form{
+            padding: 10px;
+        }
+
+        #foto{
+            width: 280px;
+            height: 250px;
+        }
+
+        main #resposta{
+            border: 3px solid rgb(7, 7, 7);
+            width: 400px;
+            margin: auto;
+        }
+        main h3{
+            text-align: center;
+        }
+      
+
+        footer{
+            text-align: center;
+        }
+
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Programa Jogo Descubra o Numero</h1>
+    </header>
+
+    <main>
+        <div id="container">
+
+          <div>
+                <img src="foto.png" id="foto" alt="imagem">
+          </div>
+
+          <form>
+            <p>
+                Modelo: <input type="text" id="inModel">
+            </p>
+            <p>
+                Preço:
+                <input type="number" id="inPreco" required>
+                <input type="submit" value="Adicionar">
+
+            </p>
+            <input type="button" value="Listar Todos" id="btListar">
+            <input type="button" value="Filtrar por Preço" id="btFiltrar">
+            <input type="button" value="Simular Promoção" id="btPromocao">
+          </form>
+
+        </div>
+
+      <div id="resposta">
+        <pre></pre>
+      </div>
+    </main>
+    
+    <footer>
+        <p>Criado por Joao Luis</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
