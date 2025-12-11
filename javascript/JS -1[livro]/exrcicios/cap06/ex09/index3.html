@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const amigos = [
+            {nome:'Joao', idade: 20},
+            {nome:'Ana', idade: 18},
+            {nome:'Caio', idade: 15}
+        ]
+
+        const amigos2 = amigos.map(aux => ({nome: aux.nome, nasc: 2025 - aux.idade}))
+
+        for (amigo of amigos2){
+            alert(`${amigo.nome} - Nasceu em ${amigo.nasc}.`)
+        }
+    </script>
+</body>
+</html>

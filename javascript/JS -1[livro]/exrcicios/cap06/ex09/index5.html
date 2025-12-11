@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+        const amigos = [
+            {nome:'Joao', idade: 20},
+            {nome:'Ana', idade: 18},
+            {nome:'Caio', idade: 15}
+        ]
+
+        const amigos2 = amigos.filter(aux => aux.idade >= 21 || aux.nome.includes("B"))
+
+        if (amigos2.length == 0){
+            alert(`Não há amigos com mais de 21 anos.`)
+        } else {
+            for (amigo of amigos2){
+                alert(`${amigo.nome} - Idade: ${amigo.idade} anos.`)
+            }
+        }
+
+        /* PRIMEIRO JEITO DE EXIBIR MENSAGEM INDICANDO QUE O FILTRO NÃO OBTEVE REGISTROS QUE ATENDAM AO CRITERIO DA PESQUISA! 
+        if (amigos2 == false){
+            alert('Não ha pessoas maiores de 21 anos entre os seus amigos')
+        } else {
+            for (amigo of amigos2){
+                alert(`${amigo.nome} - Idade: ${amigo.idade} anos.`)
+            } 
+        }
+        */
+    </script>
+</body>
+</html>
