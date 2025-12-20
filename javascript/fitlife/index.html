@@ -14,6 +14,16 @@
     href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
     rel="stylesheet">
 
+    <!--
+       #PRELOAD IMAGES
+    -->
+    <link rel="preload" as="image" href="./imgs/hero-banner.png">
+    <link rel="preload" as="image" href="./imgs/hero-circle-one.png">
+    <link rel="preload" as="image" href="./imgs/hero-circle-two.png">
+    <link rel="preload" as="image" href="./imgs/heart-rate.svg">
+    <link rel="preload" as="image" href="./imgs/calories.svg">
+
+
     <title>Fit-Ex</title>
 </head>
 <body>
@@ -38,15 +48,15 @@
 
                 <ul class="navbar-list"> 
                     <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
-                    <li><a href="#about" class="navbar-link" data-nav-link>About Us</a></li>
-                    <li><a href="#class" class="navbar-link" data-nav-link>Classes</a></li>
-                    <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
-                    <li><a href="#contact" class="navbar-link" data-nav-link>Contact Us</a></li>
+                    <li><a href="#about" class="navbar-link" data-nav-link>Sobre Nós</a></li>
+                    <li><a href="#class" class="navbar-link" data-nav-link>Aulas</a></li>
+                    <li><a href="#blog" class="navbar-link" data-nav-link>Informações</a></li>
+                    <li><a href="#contact" class="navbar-link" data-nav-link>Contatos</a></li>
                 </ul>
 
             </nav>
             
-            <a href="#" class="btn btn-secondary">Join Now</a>
+            <a href="#" class="btn btn-primary">Junte-se a Nós!</a>
 
             <button class="nav-open-btn" arial-label="open menu" data-nav-toggler>
                 <span class="line"></span>
@@ -57,7 +67,50 @@
         </div>
     </header>
 
+    <!--
+      #MAIN
+    -->
 
+    <main>
+        <!--HERO-->
+        <article>
+
+            <section class="section hero bg-dark has-after has-bg-image" id="home" data-section aria-label="hero" style="background: url(./imgs/hero-bg.png);">
+
+                <div class="container">
+
+                    <div class="hero-content">
+                        
+                        <p class="hero-subtitle">
+                            <strong class="strong">O Melhor</strong> App Fitness!
+                        </p>
+                        
+                        <h1 class="h1 hero-title">Por uma saúde e um futuro melhor!</h1>
+
+                        <p class="section-text">
+                            A sua melhor versão começa onde a sua zona de conforto termina.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">Comece Já</a>
+
+                </div>
+
+                <div class="hero-banner">
+
+                    <img src=".//imgs/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+
+                    <img src="./imgs/hero-circle-one.png" width="666" height="666" aria-hidden="true" class="circle circle-1" alt="">
+                    <img src="./imgs/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt="" class="circle circle-2">
+ 
+                    <img src="./imgs/heart-rate.svg" width="255" height="270" class="abs-img abs-img-1" alt="heart rate">
+                    <img src="./imgs/calories.svg" alt="calories" width="348" height="224" class="abs-img abs-img-2">
+
+                </div>
+
+            </section>
+
+        </article>
+    </main>
 
 
     <!--Link Javascript Page-->
