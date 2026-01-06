@@ -26,7 +26,7 @@
 
     <title>Fit-Ex</title>
 </head>
-<body>
+<body id="top">
     
     <!--
        #HEADER
@@ -171,73 +171,272 @@
                #VIDEO
             -->
 
-            <section aria-label="video" class="section video">
+           
+            <section class="section video" aria-label="video">
                 <div class="container">
 
-                    <div class="video-card has-before has-bg-image" style="background-image: url(./imgs/video-banner.jpg);">
+                <div class="video-card has-before has-bg-image"
+                    style="background-image: url(./imgs/video-banner.jpg);">
 
-                        <h2 class="h2 card-title">Explore sua Vida Fitness</h2>
+                    <h2 class="h2 card-title">Explore uma Vida Fit</h2>
 
-                        <button class="play-btn" aria-label="play video"> 
-                            <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
-                        </button>
+                    <button class="play-btn" aria-label="play video">
+                    <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+                    </button>
 
-                        <a href="#" class="btn-link has-before">Assista Mais</a>
+                    <a href="#" class="btn-link has-before">Veja Mais</a>
 
-                    </div>
+                </div>
 
                 </div>
             </section>
 
-            <!--
-               #CLASS
-            -->
+        <!-- 
+            #CLASS
+        -->
 
-            <section id="class" aria-label="class" style="background-image: url(./imgs/classes-bg.png);" class="section class bg-dark has-bg-image">
+            <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+                style="background-image: url('./imgs/classes-bg.png')">
                 <div class="container">
 
-                    <p class="section-subtitle">Nossas Aulas</p>
+                <p class="section-subtitle">Nossas Aulas</p>
 
-                    <h2 class="h2 section-title text-center">Aulas Fitness para Todos os Públicos</h2>
+                <h2 class="h2 section-title text-center">Treinos para Todos os Objetivos</h2>
 
-                    <ul class="class-list has-scrollbar">
+                <ul class="class-list has-scrollbar">
+
+                    <li class="scrollbar-item">
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                            <img src="./imgs/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                                class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                            <div class="title-wrapper">
+                                <img src="./imgs/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                                class="title-icon">
+
+                                <h3 class="h3">
+                                <a href="#" class="card-title">Levantamento de Peso</a>
+                                </h3>
+                            </div>
+
+                            <p class="card-text">
+                                Onde o aço encontra a sua determinação. Supere seus limites, domine as cargas e construa um corpo inabalável.                 
+                            </p>
+
+                            <div class="card-progress">
+
+                                <div class="progress-wrapper">
+                                <p class="progress-label">Vagas Preenchidas</p>
+
+                                <span class="progress-value">85%</span>
+                                </div>
+
+                                <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item">
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                            <img src="./imgs/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                                class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                            <div class="title-wrapper">
+                                <img src="./imgs/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                                class="title-icon">
+
+                                <h3 class="h3">
+                                <a href="#" class="card-title">Cardio</a>
+                                </h3>
+                            </div>
+
+                            <p class="card-text">
+                                Onde o aço encontra a sua determinação. Supere seus limites, domine as cargas e construa um corpo inabalável.
+                            </p>
+
+                            <div class="card-progress">
+
+                                <div class="progress-wrapper">
+                                <p class="progress-label">Vagas Preenchidas</p>
+
+                                <span class="progress-value">70%</span>
+                                </div>
+
+                                <div class="progress-bg">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item">
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                            <img src="./imgs/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                                class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                            <div class="title-wrapper">
+                                <img src="./imgs/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                                class="title-icon">
+
+                                <h3 class="h3">
+                                <a href="#" class="card-title">Yoga</a>
+                                </h3>
+                            </div>
+
+                            <p class="card-text">
+                                Reconecte-se com o agora. Pratique a presença plena para reduzir o estresse e recuperar as energias para o seu dia.
+                            </p>
+
+                            <div class="card-progress">
+
+                                <div class="progress-wrapper">
+                                <p class="progress-label">Vagas Preenchidas</p>
+
+                                <span class="progress-value">90%</span>
+                                </div>
+
+                                <div class="progress-bg">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item">
+                        <div class="class-card">
+
+                            <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                            <img src="./imgs/class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                                class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                            <div class="title-wrapper">
+                                <img src="./imgs/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                                class="title-icon">
+
+                                <h3 class="h3">
+                                <a href="#" class="card-title">Pacote EX</a>
+                                </h3>
+                            </div>
+
+                            <p class="card-text">
+                                Todos os nossos treinos na palma da sua mão. Treine onde e quando quiser com nossa biblioteca de exercícios guiados, pensada para se ajustar à sua rotina e manter você sempre em movimento.
+                            </p>
+
+                            <div class="card-progress">
+
+                                <div class="progress-wrapper">
+                                <p class="progress-label">Vagas Preenchidas</p>
+
+                                <span class="progress-value">60%</span>
+                                </div>
+
+                                <div class="progress-bg">
+                                <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+                </div>
+            </section>
+
+        <!--
+            #BLOG     
+        -->
+
+
+           <section class="section blog" id="blog" aria-label="blog">
+                <div class="container">
+
+                    <p class="section-subtitle">Nossas Novidades</p>
+
+                    <h2 class="h2 section-title text-center">Últimas Novidades</h2>
+
+                    <ul class="blog-list has-scrollbar">
 
                         <li class="scrollbar-item">
-                            <div class="class-card">
+                            <div class="blog-card">
 
-                                <figure class="card-banner img-holder" style="--width: ;--height: ;">
-                                    <img src="./imgs/class-1.jpg" class="img-cover" width="416" height="240" loading="lazy" alt="weight lifting">
-                                </figure>
+                                <div class="card-banner img-holder" style="--width:440 ; --height:270 ;">
+                                    <img src="./imgs/blog-1.jpg" alt="comece seu primeiro dia na academia" width="440" height="270" loading="lazy" class="img-cover">
+
+                                    <time class="card-meta" datetime="2026-01-01"> 01 Janeiro 2026</time>
+                                </div>
 
                                 <div class="card-content">
 
-                                    <div class="title-wrapper">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title"> Guia do Iniciante: O primeiro passo para a sua transformação. </a>
+                                    </h3>
 
-                                        <img src="./imgs/class-icon-1.png" width="52" height="52" aria-hidden="true" class="title-icon" alt="">
+                                    <p class="card-text">
+                                        Bateu o frio na barriga? Relaxa! Preparamos um guia prático para você se sentir em casa desde o primeiro dia, com dicas sobre o que levar e como começar sem medo.
+                                    </p>
 
-                                        <h3 class="h3">
-                                            <a href="#" class="card-title">Levantamento de Peso</a>
-                                        </h3>
+                                    <a href="#" class="btn-link has-before">Leia Mais</a>
 
-                                        <p class="card-text">
-                                            Onde o aço encontra a sua determinação. Supere seus limites, domine as cargas e construa um corpo inabalável.
-                                        </p>
+                                </div>
 
-                                        <div class="card-progress">
+                            </div>
+                        </li> 
 
-                                            <div class="progress-wrapper">
-                                                <p class="progress-label">Progresso</p>
+                        <li class="scrollbar-item">
+                            <div class="blog-card">
 
-                                                <span class="progress-value">85%</span>
-                                            </div>
+                                <div class="card-banner img-holder" style="--width: ; --height: ;">
+                                    <img src="./imgs/blog-2.jpg" alt="disciplina o segredo para não desistir" width="440" height="270" loading="lazy" class="img-cover">
 
-                                            <div class="progress-bg">
-                                                <div class="progress-bar" style="width: 85%;"></div>
-                                            </div>
+                                    <time datetime="2026-01-01" class="card-meta"> 01 Janeiro 2026</time>
+                                </div>
 
-                                        </div>
+                                <div class="card-content">
 
-                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title"> Disciplina: O Segredo para não Desistir! </a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        A motivação faz você começar, mas é o hábito que te mantém no caminho. Aprenda estratégias práticas para construir uma rotina de treinos que funciona mesmo naqueles dias em que a vontade não aparece.
+                                    </p>
+
+                                    <a href="#" class="btn-link has-before">Leia Mais</a>
 
                                 </div>
 
@@ -245,125 +444,25 @@
                         </li>
 
                         <li class="scrollbar-item">
-                            <div class="class-card">
+                            <div class="blog-card">
 
-                                <figure class="card-banner img-holder" style="--width: 416 ;--height: 240;">
-                                    <img src="./imgs/class-2.jpg" class="img-cover" width="416" height="240" loading="lazy" alt="cardio and strenght">
-                                </figure>
+                                <div class="card-banner img-holder" style="--width: ; --height: ;">
+                                    <img src="./imgs/blog-3.jpg" alt="Treino Curto ou Longo: Qual funciona melhor?" width="440" height="270" loading="lazy" class="img-cover">
 
-                                <div class="card-content">
-
-                                    <div class="title-wrapper">
-
-                                        <img src="./imgs/class-icon-2.png" width="52" height="52" aria-hidden="true" class="title-icon" alt="">
-
-                                        <h3 class="h3">
-                                            <a href="#" class="card-title">Cardio</a>
-                                        </h3>
-
-                                        <p class="card-text">
-                                            Acelere seu ritmo e fortaleça o coração. O lugar ideal para ganhar fôlego e queimar seus limites.
-                                        </p>
-
-                                        <div class="card-progress">
-
-                                            <div class="progress-wrapper">
-                                                <p class="progress-label">Progresso</p>
-
-                                                <span class="progress-value">70%</span>
-                                            </div>
-
-                                            <div class="progress-bg">
-                                                <div class="progress-bar" style="width: 70%;"></div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
+                                    <time datetime="2026-01-01" class="card-meta"> 01 Janeiro 2026</time>
                                 </div>
 
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="class-card">
-
-                                <figure class="card-banner img-holder" style="--width: 416 ;--height: 240;">
-                                    <img src="./imgs/class-3.jpg" class="img-cover" width="416" height="240" loading="lazy" alt="yoga">
-                                </figure>
-
                                 <div class="card-content">
 
-                                    <div class="title-wrapper">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title"> Treino Curto ou Longo: Qual funciona melhor? </a>
+                                    </h3>
 
-                                        <img src="./imgs/class-icon-3.png" width="52" height="52" aria-hidden="true" class="title-icon" alt="">
+                                    <p class="card-text">
+                                        Não tem uma hora livre para treinar? Sem problemas. Explicamos como treinos de 20 minutos, quando feitos com a intensidade certa e consistência, podem ser até mais eficazes do que horas de exercício sem foco.
+                                    </p>
 
-                                        <h3 class="h3">
-                                            <a href="#" class="card-title">Meditação</a>
-                                        </h3>
-
-                                        <p class="card-text">
-                                            Reconecte-se com o agora. Pratique a presença plena para reduzir o estresse e recuperar as energias para o seu dia.
-                                        </p>
-
-                                        <div class="card-progress">
-
-                                            <div class="progress-wrapper">
-                                                <p class="progress-label">Progresso</p>
-
-                                                <span class="progress-value">90%</span>
-                                            </div>
-
-                                            <div class="progress-bg">
-                                                <div class="progress-bar" style="width: 90%;"></div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="class-card">
-
-                                <figure class="card-banner img-holder" style="--width: 416 ;--height: 240;">
-                                    <img src="./imgs/class-4.jpg" class="img-cover" width="416" height="240" loading="lazy" alt="pack fitness">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <div class="title-wrapper">
-
-                                        <img src="./imgs/class-icon-4.png" width="52" height="52" aria-hidden="true" class="title-icon" alt="">
-
-                                        <h3 class="h3">
-                                            <a href="#" class="card-title">Pacote Fit-Ex</a>
-                                        </h3>
-
-                                        <p class="card-text">
-                                            A sua academia na palma da mão. Treine onde e quando quiser com nossa biblioteca de exercícios guiados, pensada para se ajustar à sua rotina e manter você sempre em movimento.
-                                        </p>
-
-                                        <div class="card-progress">
-
-                                            <div class="progress-wrapper">
-                                                <p class="progress-label">Progresso</p>
-
-                                                <span class="progress-value">60%</span>
-                                            </div>
-
-                                            <div class="progress-bg">
-                                                <div class="progress-bar" style="width: 60%;"></div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
+                                    <a href="#" class="btn-link has-before">Leia Mais</a>
 
                                 </div>
 
@@ -373,10 +472,209 @@
                     </ul>
 
                 </div>
-            </section>
+            </section> 
 
         </article>
     </main>
+
+
+    <!--
+       #FOOTER 
+    -->
+
+    <footer class="footer">
+
+        <div style="background-image: url(./imgs/footer-bg.png);" class="section footer-top bg-dark has-bg-image">
+
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+                        <span class="span">Fit-EX</span>
+                    </a>
+
+                    <p class="footer-brand-text">
+                        Movimente sua vida. Unimos performance e conveniência para você cuidar do corpo e da mente todos os dias.
+                    </p>
+
+                    <div class="wrapper">
+
+                        <img src="./imgs/footer-clock.png" width="34" height="34" loading="lazy" alt="clock">
+
+                        <ul class="footer-brand-list">
+
+                            <li>
+                                <p class="footer-brand-title">Segunda - Sexta</p>
+
+                                <p>7:00AM - 22:00PM</p>
+                            </li>
+
+                            <li>
+                                <p class="footer-brand-title">Sabado - Domingo</p>
+
+                                <p>7:00AM - 14:00PM</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title has-before">Nossas Redes</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Sobre Nós</a>
+                    </li>
+
+                     <li>
+                        <a href="#" class="footer-link">Aulas</a>
+                    </li>
+
+                     <li>
+                        <a href="#" class="footer-link">Informações</a>
+                    </li>
+
+                     <li>
+                        <a href="#" class="footer-link">Contatos</a>
+                    </li>
+
+                </ul>
+
+                 <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title has-before">Contatos</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <div class="icon">
+                            <ion-icon name="location" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <address class="address footer-link">
+                            Av. da Inovação, 1010 > Edifício Fit-Ex, 12º Andar
+                            Vila Olímpia, São Paulo - SP
+                        </address>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <div class="icon">
+                            <ion-icon name="call" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="tel:0800-777-2026" class="footer-link">0800-777-2026</a>
+
+                            <a href="tel:(11)4004-1010" class="footer-link">(11)4004-1010</a>
+                        </div>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <div class="icon">
+                            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="mailto:info@fit-ex.com" class="footer-link">info@fit-ex.com</a>
+
+                            <a href="mailto:suporte@fit-ex.com" class="footer-link">suporte@fit-ex.com</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+                <ul class="footer-list">
+
+                   <li>
+                    <p class="footer-list-title has-before">Nossas Novidades</p>
+                   </li>
+
+                   <li>
+                    <form action="" class="footer-form">
+                        <input type="email" name="email_address" aria-label="email" placeholder="Email Address"
+                        required class="input-field">
+
+                        <button type="submit" class="btn btn-primary" aria-label="submit">
+                            <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+                   </li>
+
+                    <li>
+                        <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2026 Fit-Ex. All Rights Reserved By <a href="https://github.com/joaoluis25" class="copyright-link">codewithsadee.</a>
+                </p>
+
+                <ul class="footer-bottom-list">
+
+                    <li>
+                        <a href="#" class="footer-bottom-link has-before"> Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link has-before"> Terms & Condition</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--
+        #BACK TO TOP
+    -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+    </a>
 
 
     <!--Link Javascript Page-->
