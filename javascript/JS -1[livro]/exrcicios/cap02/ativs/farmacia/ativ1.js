@@ -6,9 +6,10 @@ const resp3 = document.querySelector('#outResp3')//desconto
 frm.addEventListener('submit' , (e) => {
     const remedio = frm.inRemedio.value
     const preco = Number(frm.inPreco.value)
+    const qtdRemedios = Number(frm.qtdRemedio.value)
 
-    const promocao =   Math.floor(preco * 2) //valor da promoção
-    const total = preco * 2 //valot total do produto
+    const total = preco * qtdRemedios //valot total do produto
+    const promocao =  (preco * 0.9) * qtdRemedios //valor da promoção
     const desconto = total - promocao //valor do desconto dado
     resp1.innerText = `Na promoção o medicamento ${remedio} fica R$${promocao.toFixed(2)}`
     resp2.innerText = `Valor total do medicamento é de R$${total.toFixed(2)}`
